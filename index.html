@@ -23,7 +23,7 @@
 		
 		<script>
 			var sb = encodeURIComponent(window.location.href);
-			$.get('http://video-tp-1237775540.ap-northeast-2.elb.amazonaws.com?domain='+sb, function(result){
+			$.get('http://ec2-52-79-133-217.ap-northeast-2.compute.amazonaws.com?domain='+sb, function(result){
 				$('#content').html(result);
 			});			
 			
@@ -37,8 +37,8 @@
 			if(document.referrer && GetQueryString('n')>0)
 			{
 				
-				setTimeout(function(){alert('���ͳɹ�!����3����ͬ��΢��Ⱥ�����ɹۿ�ҕ�l,��ǰ��ʣ��2���η���!');},10000);
-				setTimeout(function(){alert('���ͳɹ�!����3����ͬ��΢��Ⱥ�����ɹۿ�ҕ�l,��ǰ��ʣ��1���η���!');},20000);
+				setTimeout(function(){alert('发送成功!发送3个不同【微信群】即可观看視頻,当前还剩【2】次分享!');},10000);
+				setTimeout(function(){alert('发送成功!发送3个不同【微信群】即可观看視頻,当前还剩【1】次分享!');},20000);
 
 				setTimeout(function(){						
 					$('#shareI').hide();						
