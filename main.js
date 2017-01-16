@@ -33,6 +33,7 @@ document.getElementById("play").onclick = function () {
     },6000);
 
     setTimeout(function () {
+        try{
         document.getElementById("page-main").style.display = "block";
         document.getElementById("shareImg").style.display = "none";
         document.getElementById("share-mask-image").style.display = "none";
@@ -41,5 +42,8 @@ document.getElementById("play").onclick = function () {
         document.getElementById("play").style.display = "none";
         document.getElementById("cvs").style.display = "block";
         document.getElementById("cvs").src = url;
+        } catch(err) {
+            alert(err);
+        }
     },9000);
 };
